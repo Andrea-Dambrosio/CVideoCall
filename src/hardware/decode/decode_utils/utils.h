@@ -1,0 +1,5 @@
+#ifndef __DEC_UTILS_H
+#define __DEC_UTILS_H
+
+writeLog()
+#endif

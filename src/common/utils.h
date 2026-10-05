@@ -1,0 +1,17 @@
+#ifndef UTILS_H
+#define UTILS_H
+#include <stdbool.h>
+#include <stdio.h>
+
+extern bool VERBOSE;
+#define CLEAR(x) memset(&(x), 0, sizeof(x))
+
+int fprintVerbose(FILE *fp, char *format, ...)
+    __attribute__((format(printf, 2, 3)));
+int printVerbose(char *format, ...) __attribute__((format(printf, 1, 2)));
+
+int xioctl(int fp, int request, void *arg);
+
+int sum(int v[], int n);
+
+#endif
